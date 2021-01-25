@@ -21,7 +21,7 @@ namespace PaymentWebService.Controllers.V1
     [ApiExceptionFilter]
     public class PaymentController : ControllerBase
     {
-        static JsonSerializerSettings _jsonSerializerSettings;
+        static readonly JsonSerializerSettings _jsonSerializerSettings;
 
         static PaymentController()
         {
@@ -86,12 +86,6 @@ namespace PaymentWebService.Controllers.V1
             });
         }
 
-
-        [HttpPost("Test")]
-        public Task Test(JObject data)
-        {
-            return Task.CompletedTask;
-        }
 
         /*
         [HttpPost("ReSale")]

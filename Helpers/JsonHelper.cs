@@ -11,8 +11,8 @@ namespace Helpers
 {
     public class KnownTypesBinder : ISerializationBinder
     {
-        Dictionary<string, Type> _mapName2Type = new Dictionary<string, Type>(StringComparer.InvariantCultureIgnoreCase);
-        Dictionary<Type, string> _mapType2Name = new Dictionary<Type, string>();
+        readonly Dictionary<string, Type> _mapName2Type = new Dictionary<string, Type>(StringComparer.InvariantCultureIgnoreCase);
+        readonly Dictionary<Type, string> _mapType2Name = new Dictionary<Type, string>();
 
         public Type BindToType(string assemblyName, string typeName)
         {
@@ -38,14 +38,14 @@ namespace Helpers
 
     public static class JsonHelper
     {
-        static JsonSerializer _serializerWithEncryption;
-        static JsonSerializer _serializerWithoutEncryption;
+        static readonly JsonSerializer _serializerWithEncryption;
+        static readonly JsonSerializer _serializerWithoutEncryption;
 
-        static JsonSerializerSettings _deserializeSettings;
-        static JsonSerializerSettings _serializeSettings;
-        static JsonSerializerSettings _serializeSettingsWithEncryption;
+        static readonly JsonSerializerSettings _deserializeSettings;
+        static readonly JsonSerializerSettings _serializeSettings;
+        static readonly JsonSerializerSettings _serializeSettingsWithEncryption;
         
-        static KnownTypesBinder _knownTypesBinder;
+        static readonly KnownTypesBinder _knownTypesBinder;
 
         static JsonHelper()
         {

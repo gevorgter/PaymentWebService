@@ -46,9 +46,9 @@ namespace PaymentWebService.Code
 
         public async Task ResolveVault()
         {
-            if (!(_rq is IPaymentInfo obj))
+            if (_rq is not IPaymentInfo obj)
                 return;
-            if (!(obj.paymentInfo is VaultPayment vaultPayment))
+            if (obj.paymentInfo is not VaultPayment vaultPayment)
                 return;
 
             string vaultInfo = await Vault.Vault2.GetVaultData(_accountId, vaultPayment.vaultInfo.vaultId, vaultPayment.vaultInfo.sequenceId).ConfigureAwait(false);
@@ -61,9 +61,9 @@ namespace PaymentWebService.Code
 
         public async Task ResolveCryptogram()
         {
-            if (!(_rq is IPaymentInfo obj))
+            if (_rq is not IPaymentInfo obj)
                 return;
-            if (!(obj.paymentInfo is CryptogramPayment cryptogramPayment))
+            if (obj.paymentInfo is not CryptogramPayment cryptogramPayment)
                 return;
 
             string cryptogram = await Cryptogram.Cryptogram.GetString(_accountId, cryptogramPayment.cryptogram).ConfigureAwait(false); //may be we should use Peek here
@@ -82,7 +82,7 @@ namespace PaymentWebService.Code
 
         public async Task SaveIfScheduled()
         {
-            if (!(_rq is ISchedulingInfo obj))
+            if (_rq is not ISchedulingInfo obj)
                 return;
             if (obj.schedulingInfo == null)
                 return;

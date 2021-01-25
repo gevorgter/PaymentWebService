@@ -16,7 +16,7 @@ namespace PaymentDTO.Payment
         public Amount amount { get; set; }
         public PaymentInfo paymentInfo { get; set; }
         public SchedulingInfo schedulingInfo { get; set; }
-        public IEnumerable<AdditionalFeilds> additionalFields { get; set; } = null;
+        public IEnumerable<AdditionalFields> additionalFields { get; set; } = null;
         public string additionalInfo { get; set; }
     }
 
@@ -33,7 +33,7 @@ namespace PaymentDTO.Payment
         public Amount amount { get; set; }
         public PaymentInfo paymentInfo { get; set; }
         public SchedulingInfo schedulingInfo { get; set; }
-        public IEnumerable<AdditionalFeilds> additionalFields { get; set; } = null;
+        public IEnumerable<AdditionalFields> additionalFields { get; set; } = null;
         public string additionalInfo { get; set; }
     }
 
@@ -48,6 +48,7 @@ namespace PaymentDTO.Payment
     public class VoidRequestDTO : TransactionRequestDTO
     {
         public string originalTrId { get; set; }
+        public IEnumerable<AdditionalFields> additionalFields { get; set; } = null;
     }
     public class VoidResponseDTO : ResponseDTO
     {
@@ -59,6 +60,7 @@ namespace PaymentDTO.Payment
     {
         public Amount amount { get; set; }
         public string originalTrId { get; set; }
+        public IEnumerable<AdditionalFields> additionalFields { get; set; } = null;
     }
 
     public class RefundResponseDTO : ResponseDTO

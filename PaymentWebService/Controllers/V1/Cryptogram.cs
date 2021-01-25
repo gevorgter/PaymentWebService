@@ -18,8 +18,8 @@ namespace PaymentWebService.Controllers.V1
     [ApiExceptionFilter]
     public class CryptogramController : ControllerBase
     {
-        static JsonSerializer _serializer;
-        static JsonSerializerSettings _jsonSerializerSettings;
+        static readonly JsonSerializer _serializer;
+        static readonly JsonSerializerSettings _jsonSerializerSettings;
 
         static CryptogramController()
         {

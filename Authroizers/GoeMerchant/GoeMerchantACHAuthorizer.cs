@@ -14,8 +14,7 @@ namespace Authorizers
     class GoeMerchantACHAuthorizer : Authorizer
     {
         const string _endpoint = "https://secure.1stpaygateway.net/secure/RestGW/Gateway/Transaction";
-
-        GoeMerchantACHConfig _clientConfig;
+        readonly GoeMerchantACHConfig _clientConfig;
 
         public GoeMerchantACHAuthorizer(GoeMerchantACHConfig clientConfig)
         {

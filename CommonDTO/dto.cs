@@ -129,8 +129,9 @@ namespace CommonDTO
     {
         Amount amount { get; set; }
     }
-    public class AdditionalFeilds
+    public class AdditionalFields
     {
+        public int fieldId { get; set; }
         public string name { get; set; }
         public string value { get; set; }
     }
@@ -138,13 +139,13 @@ namespace CommonDTO
     {
         public Amount amount { get; set; } = null;
         public PaymentInfo paymentInfo { get; set; } = null;
-        public IEnumerable<AdditionalFeilds> additionalFields { get; set; } = null;
+        public IEnumerable<AdditionalFields> additionalFields { get; set; } = null;
     }
     public class AuthTransaction : Transaction, IPaymentInfo, IAmount
     {
         public Amount amount { get; set; } = null;
         public PaymentInfo paymentInfo { get; set; } = null;
-        public IEnumerable<AdditionalFeilds> additionalFields { get; set; } = null;
+        public IEnumerable<AdditionalFields> additionalFields { get; set; } = null;
     }
     public class VoidTransaction : Transaction
     {
