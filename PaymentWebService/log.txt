@@ -1,0 +1,109 @@
+[19:40:20INF] Starting up{"App":"PaymentWebService"}
+[19:41:53INF] Starting up{"App":"PaymentWebService"}
+[19:44:29INF] Starting up{"App":"PaymentWebService"}
+[19:45:24INF] Starting up{"App":"PaymentWebService"}
+[19:58:23INF] Starting up{"App":"PaymentWebService"}
+[20:03:44INF] Starting up{"App":"PaymentWebService"}
+[21:06:36INF] Starting up{"App":"PaymentWebService"}
+[21:15:24INF] Starting up{"App":"PaymentWebService"}
+[21:17:50INF] Starting up{"App":"PaymentWebService"}
+[21:19:03INF] Starting up{"App":"PaymentWebService"}
+[21:26:38INF] Starting up{"App":"PaymentWebService"}
+[21:27:16INF] Starting up{"App":"PaymentWebService"}
+[22:15:20INF] Starting up{"App":"PaymentWebService"}
+[23:56:00INF] Starting up{"App":"PaymentWebService"}
+[23:57:19INF] Starting up{"App":"PaymentWebService"}
+[19:51:12INF] Starting up{"App":"PaymentWebService"}
+[19:54:36INF] Starting up{"App":"PaymentWebService"}
+[20:01:58INF] Starting up{"App":"PaymentWebService"}
+[20:06:19INF] Starting up{"App":"PaymentWebService"}
+[21:35:23INF] Starting up{"App":"PaymentWebService"}
+[21:37:00INF] Starting up{"App":"PaymentWebService"}
+[21:38:26INF] Starting up{"App":"PaymentWebService"}
+[21:47:25INF] Starting up{"App":"PaymentWebService"}
+[21:50:38INF] Starting up{"App":"PaymentWebService"}
+[21:53:50INF] Starting up{"App":"PaymentWebService"}
+[21:54:35INF] Starting up{"App":"PaymentWebService"}
+[21:58:36INF] Starting up{"App":"PaymentWebService"}
+[00:03:10INF] Starting up{"App":"PaymentWebService"}
+[00:12:35INF] Starting up{"App":"PaymentWebService"}
+[03:24:56INF] Starting up{"App":"PaymentWebService"}
+[03:28:05INF] Starting up{"App":"PaymentWebService"}
+[03:28:48INF] Starting up{"App":"PaymentWebService"}
+[03:31:09INF] Starting up{"App":"PaymentWebService"}
+[03:35:22INF] Starting up{"App":"PaymentWebService"}
+[03:36:20INF] Starting up{"App":"PaymentWebService"}
+[03:53:42INF] Starting up{"App":"PaymentWebService"}
+[14:16:58INF] Starting up{"App":"PaymentWebService"}
+[14:43:14INF] Starting up{"App":"PaymentWebService"}
+[16:27:26INF] Starting up{"App":"PaymentWebService"}
+[16:34:11INF] Starting up{"App":"PaymentWebService"}
+[17:22:03INF] Starting up{"App":"PaymentWebService"}
+[17:22:04ERR] Pipeline threw exception on step #: 3{"App":"PaymentWebService"}
+Authorizers.AuthorizerException: No config file for client 0, paymentType CreditCard
+   at Authorizers.Common.Authorizer.GetConfig(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 36
+   at Authorizers.Common.Authorizer.GetAuthorizer(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 41
+   at PaymentWebService.Code.SalesPipeline.FigureoutAuthorizer() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\Pipelines\SalesPipeline.cs:line 117
+   at PaymentWebService.Code.PipelineData`1.ExecutePipeline() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\PipelineData.cs:line 78
+[17:26:01INF] Starting up{"App":"PaymentWebService"}
+[17:29:32INF] Starting up{"App":"PaymentWebService"}
+[17:29:32ERR] Pipeline threw exception on step #: 3{"App":"PaymentWebService"}
+Authorizers.AuthorizerException: No config file for client 0, paymentType CreditCard
+   at Authorizers.Common.Authorizer.GetConfig(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 36
+   at Authorizers.Common.Authorizer.GetAuthorizer(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 41
+   at PaymentWebService.Code.SalesPipeline.FigureoutAuthorizer() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\Pipelines\SalesPipeline.cs:line 117
+   at PaymentWebService.Code.PipelineData`1.ExecutePipeline() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\PipelineData.cs:line 78
+[17:31:30ERR] Pipeline threw exception on step #: 3{"App":"PaymentWebService"}
+Authorizers.AuthorizerException: No config file for client 0, paymentType CreditCard
+   at Authorizers.Common.Authorizer.GetConfig(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 36
+   at Authorizers.Common.Authorizer.GetAuthorizer(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 41
+   at PaymentWebService.Code.SalesPipeline.FigureoutAuthorizer() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\Pipelines\SalesPipeline.cs:line 117
+   at PaymentWebService.Code.PipelineData`1.ExecutePipeline() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\PipelineData.cs:line 78
+[17:31:35ERR] Pipeline threw exception on step #: 3{"App":"PaymentWebService"}
+Authorizers.AuthorizerException: No config file for client 0, paymentType CreditCard
+   at Authorizers.Common.Authorizer.GetConfig(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 36
+   at Authorizers.Common.Authorizer.GetAuthorizer(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 41
+   at PaymentWebService.Code.SalesPipeline.FigureoutAuthorizer() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\Pipelines\SalesPipeline.cs:line 117
+   at PaymentWebService.Code.PipelineData`1.ExecutePipeline() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\PipelineData.cs:line 78
+[17:31:37ERR] Pipeline threw exception on step #: 3{"App":"PaymentWebService"}
+Authorizers.AuthorizerException: No config file for client 0, paymentType CreditCard
+   at Authorizers.Common.Authorizer.GetConfig(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 36
+   at Authorizers.Common.Authorizer.GetAuthorizer(Int32 accountId, PaymentType paymentType) in D:\Projects\Merchants\PaymentWebService\Authroizers\Common\Authorizer.cs:line 41
+   at PaymentWebService.Code.SalesPipeline.FigureoutAuthorizer() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\Pipelines\SalesPipeline.cs:line 117
+   at PaymentWebService.Code.PipelineData`1.ExecutePipeline() in D:\Projects\Merchants\PaymentWebService\PaymentWebService\Code\PipelineData.cs:line 78
+[17:34:15INF] Starting up{"App":"PaymentWebService"}
+[18:00:14INF] Starting up{"App":"PaymentWebService"}
+[18:09:53INF] Starting up{"App":"PaymentWebService"}
+[18:13:04INF] Starting up{"App":"PaymentWebService"}
+[18:22:09INF] Starting up{"App":"PaymentWebService"}
+[18:58:05INF] Starting up{"App":"PaymentWebService"}
+[19:04:57INF] Starting up{"App":"PaymentWebService"}
+[21:31:26INF] Starting up{"App":"PaymentWebService"}
+[21:56:55INF] Starting up{"App":"PaymentWebService"}
+[22:03:44INF] Starting up{"App":"PaymentWebService"}
+[22:45:27INF] Starting up{"App":"PaymentWebService"}
+[22:20:20INF] Starting up{"App":"PaymentWebService"}
+[22:27:28INF] Starting up{"App":"PaymentWebService"}
+[22:55:05INF] Starting up{"App":"PaymentWebService"}
+[22:57:18INF] Starting up{"App":"PaymentWebService"}
+[22:59:12INF] Starting up{"App":"PaymentWebService"}
+[23:04:05INF] Starting up{"App":"PaymentWebService"}
+[23:06:40INF] Starting up{"App":"PaymentWebService"}
+[23:09:41INF] Starting up{"App":"PaymentWebService"}
+[23:13:18INF] Starting up{"App":"PaymentWebService"}
+[23:17:22INF] Starting up{"App":"PaymentWebService"}
+[23:18:34INF] Starting up{"App":"PaymentWebService"}
+[23:23:23INF] Starting up{"App":"PaymentWebService"}
+[23:28:21INF] Starting up{"App":"PaymentWebService"}
+[23:29:13INF] Starting up{"App":"PaymentWebService"}
+[23:42:21INF] Starting up{"App":"PaymentWebService"}
+[23:44:58INF] Starting up{"App":"PaymentWebService"}
+[23:46:37INF] Starting up{"App":"PaymentWebService"}
+[23:51:30INF] Starting up{"App":"PaymentWebService"}
+[23:54:16INF] Starting up{"App":"PaymentWebService"}
+[23:59:31INF] Starting up{"App":"PaymentWebService"}
+[00:02:16INF] Starting up{"App":"PaymentWebService"}
+[22:41:08INF] Starting up{"App":"PaymentWebService"}
+[22:43:33INF] Starting up{"App":"PaymentWebService"}
+[22:47:23INF] Starting up{"App":"PaymentWebService"}
+[19:40:53INF] Starting up{"App":"PaymentWebService"}
